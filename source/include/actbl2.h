@@ -1236,7 +1236,8 @@ enum AcpiMadtType
     ACPI_MADT_TYPE_IMSIC                    = 25,
     ACPI_MADT_TYPE_APLIC                    = 26,
     ACPI_MADT_TYPE_PLIC                     = 27,
-    ACPI_MADT_TYPE_RESERVED                 = 28,   /* 28 to 0x7F are reserved */
+    ACPI_MADT_TYPE_SMMC                     = 28,
+    ACPI_MADT_TYPE_RESERVED                 = 29,   /* 29 to 0x7F are reserved */
     ACPI_MADT_TYPE_OEM_RESERVED             = 0x80  /* 0x80 to 0xFF are reserved for OEM use */
 };
 
@@ -1718,6 +1719,16 @@ typedef struct acpi_madt_plic {
     UINT32                  GsiBase;
 } ACPI_MADT_PLIC;
 
+/* 28: RISC-V SMMC */
+typedef struct acpi_madt_smmc {
+    ACPI_SUBTABLE_HEADER    Header;
+    UINT8                   Version;
+    UINT8                   Uid;
+    UINT32                  Flags;
+    UINT8                   HwId[8];
+    UINT32                  GsiBase;
+    UINT8                  NumSources;
+} ACPI_MADT_SMMC;
 
 /* 80: OEM data */
 

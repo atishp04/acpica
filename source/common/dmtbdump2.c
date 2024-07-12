@@ -1055,6 +1055,11 @@ AcpiDmDumpMadt (
             InfoTable = AcpiDmTableInfoMadt27;
             break;
 
+	case ACPI_MADT_TYPE_SMMC:
+
+            InfoTable = AcpiDmTableInfoMadt28;
+            break;
+
         default:
 
             if ((Subtable->Type >= ACPI_MADT_TYPE_RESERVED) &&

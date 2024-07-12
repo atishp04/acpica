@@ -573,6 +573,7 @@ extern ACPI_DMTABLE_INFO        AcpiDmTableInfoMadt24[];
 extern ACPI_DMTABLE_INFO        AcpiDmTableInfoMadt25[];
 extern ACPI_DMTABLE_INFO        AcpiDmTableInfoMadt26[];
 extern ACPI_DMTABLE_INFO        AcpiDmTableInfoMadt27[];
+extern ACPI_DMTABLE_INFO        AcpiDmTableInfoMadt28[];
 extern ACPI_DMTABLE_INFO        AcpiDmTableInfoMadt128[];
 extern ACPI_DMTABLE_INFO        AcpiDmTableInfoMadtHdr[];
 extern ACPI_DMTABLE_INFO        AcpiDmTableInfoMcfg[];

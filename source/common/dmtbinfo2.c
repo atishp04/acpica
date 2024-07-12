@@ -1146,6 +1146,19 @@ ACPI_DMTABLE_INFO           AcpiDmTableInfoMadt27[] =
    ACPI_DMT_TERMINATOR
 };
 
+/* 28: RISC-V SMMC interrupt controller */
+
+ACPI_DMTABLE_INFO           AcpiDmTableInfoMadt28[] =
+{
+    {ACPI_DMT_UINT8,    ACPI_MADT28_OFFSET (Version),               "Version", 0},
+    {ACPI_DMT_UINT8,    ACPI_MADT28_OFFSET (Uid),                   "SMMC UID", 0},
+    {ACPI_DMT_UINT32,   ACPI_MADT28_OFFSET (Flags),                 "Flags", 0},
+    {ACPI_DMT_UINT64,   ACPI_MADT28_OFFSET (HwId),                  "HwId", 0},
+    {ACPI_DMT_UINT32,   ACPI_MADT28_OFFSET (GsiBase),               "GsiBase", 0},
+    {ACPI_DMT_UINT8,   ACPI_MADT28_OFFSET (NumSources),            "NumSources", 0},
+   ACPI_DMT_TERMINATOR
+};
+
 /* 128: OEM data structure */
 
 ACPI_DMTABLE_INFO           AcpiDmTableInfoMadt128[] =

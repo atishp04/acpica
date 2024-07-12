@@ -437,6 +437,7 @@ static const char           *AcpiDmMadtSubnames[] =
     "RISC-V Incoming MSI Controller",   /* ACPI_MADT_TYPE_IMSIC */
     "RISC-V APLIC Controller",          /* ACPI_MADT_TYPE_APLIC */
     "RISC-V PLIC Controller",           /* ACPI_MADT_TYPE_PLIC */
+    "RISC-V Software Managed MSI Controller", /* ACPI_MADT_TYPE_SMMC */
     "Unknown Subtable Type",            /* Reserved */
     "Types 80-FF are used for OEM data" /* Reserved for OEM data */
 };
